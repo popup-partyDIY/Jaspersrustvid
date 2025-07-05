@@ -3,24 +3,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jasper's Rust Clips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JsRustClips</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
-<body class="dark">
-  <div id="theme-toggle">🌓</div>
-  <header>
-    <h1><span class="j-letter">J</span>sRustClips</h1>
-    <p>Post-apocalyptic Rust gameplay hub</p>
-  </header>
-  <main>
-    <button id="explode-btn">Upload New Clip 🔥</button>
-    <div id="explosion"></div>
-    <section class="video-feed">
+<body>
+  <div class="container">
+    <header>
+      <h1><span class="rust">J</span>sRustClips</h1>
+      <p>Post-apocalyptic Rust gameplay hub</p>
+    </header>
+
+    <button id="uploadBtn" onclick="explode()">Upload New Clip 🔥</button>
+
+    <section>
       <h2>Latest Clips</h2>
-      <video controls src="sample.mp4" poster="poster.jpg"></video>
+      <div class="video-container">
+        <video controls>
+          <source src="videos/sample_clip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
-  </main>
+  </div>
+
+  <audio id="boom" src="assets/explosion.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
 </body>
 </html>
