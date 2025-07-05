@@ -1,12 +1,13 @@
 {
-  "name": "jasper-rust-site",
+  "name": "jsrustclips",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preview": "vite preview"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "vite": "^5.0.0"
   }
 }
